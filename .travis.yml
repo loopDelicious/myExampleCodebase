@@ -1,0 +1,11 @@
+language: ruby
+rvm:
+ - 2.2
+ - jruby
+ - rbx-2
+
+install:
+ - npm install newman
+
+script:
+ — newman run tests/bitcoinz.postman_collection.json
