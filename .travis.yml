@@ -1,8 +1,4 @@
-language: ruby
-rvm:
- - 2.2
- - jruby
- - rbx-2
+language: node.js
 
 install:
  - npm install newman
