@@ -4,4 +4,4 @@ install:
  - npm install -g newman
 
 script:
- — newman run tests/bitcoinz.postman_collection.json -e tests.postman_environemnt.json
+ — newman run tests/bitcoinz.postman_collection.json -e tests/tests.postman_environment.json
