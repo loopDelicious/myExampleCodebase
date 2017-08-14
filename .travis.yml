@@ -1,7 +1,7 @@
 language: node_js
 
 install:
- - npm install -g newman
+ - npm install newman
 
 script:
- — newman run tests/bitcoinz.postman_collection.json -e tests/tests.postman_environment.json
+ — ./node_modules/newman/bin/newman.js run tests/bitcoinz.postman_collection.json -e tests/tests.postman_environment.json
