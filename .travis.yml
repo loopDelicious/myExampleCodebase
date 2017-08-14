@@ -1,9 +1,9 @@
 language: node_js
 node_js:
- - "node"
+  - "node"
 
 install:
- - npm install newman
+  - npm install newman
 
 before_script:
   - node --version
@@ -11,4 +11,4 @@ before_script:
   - node_modules/.bin/newman --version
 
 script:
- — node_modules/.bin/newman run tests/bitcoinz.postman_collection.json -e tests/tests.postman_environment.json
+  — node_modules/.bin/newman run tests/bitcoinz.postman_collection.json -e tests/tests.postman_environment.json
